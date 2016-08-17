@@ -1,0 +1,124 @@
+/* 
+    JaCaMo Project File 
+    
+    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
+    
+    (see below the documentation about what can be defined in this file)
+*/
+
+mas mapc_elt_2016 {
+	
+    agent vehicle1: vehicle.asl {
+		goals: register_EIS("connectionA1")
+	}
+	agent vehicle2: vehicle.asl {
+		goals: register_EIS("connectionA2")
+	}
+	agent vehicle3: vehicle.asl {
+		goals: register_EIS("connectionA3")
+	}
+	agent vehicle4: vehicle.asl {
+		goals: register_EIS("connectionA4")
+	}	
+	agent vehicle5: vehicle.asl {
+		goals: register_EIS("connectionA5")
+	}
+	agent vehicle6: vehicle.asl {
+		goals: register_EIS("connectionA6")
+	}
+	agent vehicle7: vehicle.asl {
+		goals: register_EIS("connectionA7")
+	}
+	agent vehicle8: vehicle.asl {
+		goals: register_EIS("connectionA8")
+	}
+	agent vehicle9: vehicle.asl {
+		goals: register_EIS("connectionA9")
+	}
+	agent vehicle10: vehicle.asl {
+		goals: register_EIS("connectionA10")
+	}
+	agent vehicle11: vehicle.asl {
+		goals: register_EIS("connectionA11")
+	}
+	agent vehicle12: vehicle.asl {
+		goals: register_EIS("connectionA12")
+	}
+	agent vehicle13: vehicle.asl {
+		goals: register_EIS("connectionA13")
+	}
+	agent vehicle14: vehicle.asl {
+		goals: register_EIS("connectionA15")
+	}
+	agent vehicle16: vehicle.asl {
+		goals: register_EIS("connectionA16")
+	}
+	 /* agent vehicle1: vehicle.asl {
+		goals: register_EIS("connectionB1")
+	}
+	
+	agent vehicle2: vehicle.asl {
+		goals: register_EIS("connectionB2")
+	}
+	
+	agent vehicle3: vehicle.asl {
+		goals: register_EIS("connectionB3")
+	}	
+	agent vehicle4: vehicle.asl {
+		goals: register_EIS("connectionB4")
+	}
+	/*
+	agent vehicle5: vehicle.asl {
+		goals: register_EIS("connectionB5")
+	}
+	agent vehicle6: vehicle.asl {
+		goals: register_EIS("connectionB6")
+	}
+	agent vehicle7: vehicle.asl {
+		goals: register_EIS("connectionB7")
+	}
+	agent vehicle8: vehicle.asl {
+		goals: register_EIS("connectionB8")
+	}
+	agent vehicle9: vehicle.asl {
+		goals: register_EIS("connectionB9")
+	}
+	agent vehicle10: vehicle.asl {
+		goals: register_EIS("connectionB10")
+	}
+	agent vehicle11: vehicle.asl {
+		goals: register_EIS("connectionB11")
+	}
+	agent vehicle12: vehicle.asl {
+		goals: register_EIS("connectionB12")
+	}
+	agent vehicle13: vehicle.asl {
+		goals: register_EIS("connectionB13")
+	}
+	agent vehicle14: vehicle.asl {
+		goals: register_EIS("connectionB14")
+	}
+	agent vehicle15: vehicle.asl {
+		goals: register_EIS("connectionB15")
+	}
+	agent vehicle16: vehicle.asl {
+		goals: register_EIS("connectionB16")
+	}
+	* 
+	*/
+//	 organisation mapc_elt_2016: org-spec.xml {   		// the organisational mapc_elt_2016 from org-spec.xml
+//    	group jacamo_team: elt-team {      				// instance group (jacamo_team) from spec team
+//    		responsible-for: mapc_start 				// that will be responsible for the execution of scheme car_sch (defined below)
+//    		players: vehicle1	agent-car,      		// the roles of the agents in this group
+//    		         vehicle2	agent-drone,
+//    		         vehicle3	agent-motorcycle,
+//    		         vehicle4	agent-truck
+//    		debug                      					// starts the organisational inspector
+//    	}
+//    	scheme mapc_start: car_sch {      				// instance scheme car_sch
+//    		debug
+//    	}
+//	}
+    asl-path: src/agt
+}
+

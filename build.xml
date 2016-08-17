@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+
+<project name   ="mapc-team"
+         basedir="."
+         default="server">
+
+    <property name="jacamo.project.file" value="scenario1.jcm"/>
+    <property name="build.dir" value="${basedir}/bin" />
+
+    <path id="project.classpath">
+        <pathelement location="${basedir}"/>
+        <pathelement location="${build.dir}"/>
+        <fileset dir="${basedir}/lib" >  <include name="*.jar" /> </fileset>
+    </path>
+
+    <target name="init">
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${basedir}/src" destdir="${build.dir}" debug="true" optimize="true" includeantruntime="false" >
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <target name="server"  >
+        <echo message="Running MAPC Server" />
+        <java classname="massim.server.Server" failonerror="true" fork="yes" dir="${basedir}" >
+            <classpath refid="project.classpath"/>
+            <arg line="--conf conf/test-completescenario/2015-complete-3sims.xml"/>
+            <!-- jvmarg line="-Xmx500M -Xss8M"/ -->    
+        </java>
+    </target>
+
+    <target name="monitor"  >
+        <echo message="Running MAPC Monitor" />
+        <java classname="massim.competition2015.monitor.GraphMonitor" failonerror="true" fork="yes" dir="${basedir}" >
+            <classpath refid="project.classpath"/>
+            <arg line="-rmihost localhost -rmiport 1099"/>
+        </java>
+    </target>
+
+   	<target name="java-team" depends="compile" >
+        <echo message="Running java team (team B)" />
+        <java classname="massim.javaagents.App" failonerror="true" fork="yes" dir="${basedir}" >
+            <classpath refid="project.classpath"/>
+        	<arg line="./conf/team-b/javaagentsconfig.xml" />
+        </java>
+    </target>
+
+    <target name="jcm-team" depends="compile" >
+        <echo message="Running project ${ant.project.name} (team A)" />
+        <java classname="jacamo.infra.JaCaMoLauncher" failonerror="true" fork="yes" dir="${basedir}" >
+            <classpath refid="project.classpath"/>
+            <arg line="${jacamo.project.file} ${debug} "/>
+            <!-- jvmarg line="-Xmx500M -Xss8M"/ -->    
+        </java>
+    </target>
+
+    <target name="clean" >
+        <delete failonerror="no" includeEmptyDirs="true" verbose="true">
+            <fileset dir="${basedir}" includes="**/*.class"/>
+            <fileset dir="${basedir}/backup" includes="**/*"/>
+            <fileset dir="${basedir}/graphs" includes="**/*"/>
+            <fileset dir="${basedir}/log"    includes="**/*"/>
+            <fileset dir="${basedir}/xmls"   includes="**/*"/>
+            <fileset dir="${basedir}/cache"  includes="**/*"/>
+            <fileset dir="${basedir}" includes="*.raw"/>        	
+            <fileset dir="${basedir}" includes="**/.DS_Store"/>        	
+        </delete>
+    </target>
+</project>

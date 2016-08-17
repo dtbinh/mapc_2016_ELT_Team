@@ -1,0 +1,108 @@
+[EISArtifact_vehicle4] Registering vehicle4 to entity connectionA4
+[EISArtifact_vehicle1] Registering vehicle1 to entity connectionA1
+[EISArtifact_vehicle3] Registering vehicle3 to entity connectionA3
+[EISArtifact_vehicle2] Registering vehicle2 to entity connectionA2
+[vehicle1] Got role: Car
+[vehicle4] Got role: Truck
+[vehicle2] Got role: Drone
+[vehicle3] Got role: Motorcycle
+[vehicle4] -------------------- Entrou no Common-plans ----------------
+[vehicle1] -------------------- Entrou no Common-plans ----------------
+[vehicle4] Starting truck goal ...
+[vehicle1] Starting car goal ...
+[vehicle2] -------------------- Entrou no Common-plans ----------------
+[vehicle2] Starting drone goal ...
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 0
+[vehicle3] -------------------- Entrou no Common-plans ----------------
+[vehicle3] Starting motorcycle goal ...
+[vehicle3] Openning a new priced job opportunity
+[vehicle3] Doing post_job(type(priced),price(298),active_steps(28),storage(storage1),.list(item(base1,6),item(base2,4),item(base3,5))) for step 0
+[vehicle4] Doing a bid in an auction for a new job job_id10903970354030396020000 Os itens necess�rios s�o[item(material1,3),item(material2,3)]
+[vehicle4] Doing bid_for_job(job(job_id109039703540303960),price(4000)) for step 2
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 2
+[vehicle3] No fail event was generated for +!select_motorcycle_goal[source(self)]
+[vehicle3] Found a goal for which there is no applicable plan:+!select_motorcycle_goal[source(self)]
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 4
+[vehicle4] Ganhei o leil�o para os itens [item(material1,3),item(material2,3)]
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 6
+[vehicle4] item(material1,3)
+[vehicle4] O id � material1 A quantidade � 3
+[vehicle4] Precisa comprar base1 a quantidade � 5 e ele pesa 10
+[vehicle4] Vou comprar base1 a quantidade � 15 e ele pesa 150
+[vehicle4] Precisa Manufaturar o produtomaterial1 ele usa 1 ferramenta tool1
+[vehicle4] Sending CFP to [vehicle3,vehicle2,vehicle1] from ID 0
+[vehicle4] Come�ou o CNP 0 para base1
+[vehicle4] Offers are [offer(300,vehicle3),offer(550,vehicle1),offer(1200,vehicle2)]
+[vehicle4] Winner is vehicle3 with 300
+[vehicle1] I lost CNP 0.
+[vehicle3] My proposal: 300 won CNP 0 for base1! with quantity15
+[vehicle3] removi o plays
+[vehicle3] Vou comprar o item base1 com quantidade 15
+[vehicle2] I lost CNP 0.
+[vehicle3] Doing goto(facility(shop1)) for step 7
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 8
+[vehicle4] item(material2,3)
+[vehicle4] O id � material2 A quantidade � 3
+[vehicle4] Precisa comprar base1 a quantidade � 10 e ele pesa 20
+[vehicle4] Vou comprar base1 a quantidade � 30 e ele pesa 600
+[vehicle4] Precisa Manufaturar o produtomaterial2 ele usa 1 ferramenta tool3
+[vehicle4] Sending CFP to [vehicle3,vehicle2,vehicle1] from ID 1
+[vehicle4] Come�ou o CNP 1 para base1
+[vehicle2] step 8, error executing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) trying again...
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 9
+[vehicle4] Offers are [offer(550,vehicle1),offer(1200,vehicle2)]
+[vehicle4] Winner is vehicle1 with 550
+[vehicle1] My proposal: 550 won CNP 1 for base1! with quantity30
+[vehicle2] I lost CNP 1.
+[vehicle1] removi o plays
+[vehicle1] Vou comprar o item base1 com quantidade 30
+[vehicle1] Doing goto(facility(shop1)) for step 9
+[vehicle4] Doing goto(facility(storage1)) for step 9
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 10
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 11
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 12
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 13
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 14
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 15
+[vehicle3] Doing goto(facility(shop1)) for step 15
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 16
+[vehicle1] Doing goto(facility(shop1)) for step 17
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 17
+[vehicle4] Doing goto(facility(storage1)) for step 17
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 18
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 19
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 20
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 21
+[vehicle2] Openning a new auction job opportunity
+[vehicle3] Doing goto(facility(shop1)) for step 22
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 22
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 23
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 24
+[vehicle1] Doing goto(facility(shop1)) for step 24
+[vehicle4] Doing goto(facility(storage1)) for step 24
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 25
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 26
+[vehicle4] step 25, error executing continue trying again...
+[vehicle2] Openning a new auction job opportunity
+[vehicle2] Doing post_job(type(auction),max_price(10000),fine(20000),active_steps(2),auction_steps(100),storage(storage1),.list(item(material1,10),item(material2,20),item(material3,30))) for step 27

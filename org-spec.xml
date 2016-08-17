@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification 
+    id="o1"
+    os-version="0.8"
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+<structural-specification>
+<role-definitions>
+    <role id="agent-car" />
+    <role id="agent-drone" />
+    <role id="agent-motorcycle" />
+    <role id="agent-truck" />
+    <role id="organizer" />
+</role-definitions>
+<group-specification id="elt-team">
+    <roles>
+        <role id="agent-car" min="1" max="1"/>
+        <role id="agent-drone" min="1" max="1"/>
+        <role id="agent-motorcycle" min="1" max="1"/>
+        <role id="agent-truck" min="1" max="1"/>
+        <role id="organizer" min="1" max="1" />
+    </roles>
+    <links>
+        <link from="vehicle" to="vehicle" type="communication"
+              scope="intra-group" extends-subgroups="true" bi-dir="true"/>
+     	<link from="organizer" to="vehicle" type="communication"
+              scope="intra-group" extends-subgroups="true" bi-dir="true"/>
+    </links>
+</group-specification>
+</structural-specification>
+<functional-specification>
+    <scheme id="car_sch">
+        <goal id="start">
+            <plan operator="sequence">
+                <goal id="start_car_goal"    ttf="10 minutes" />
+            </plan>
+        </goal>
+        <mission id="start_car_agent" min="1" max="1">
+            <goal id="start_car_goal"/>
+        </mission>
+    </scheme>
+</functional-specification>
+<normative-specification>
+    <norm id="norm1" type="obligation" role="agent-car" mission="start_car_agent"/>
+</normative-specification>
+</organisational-specification>

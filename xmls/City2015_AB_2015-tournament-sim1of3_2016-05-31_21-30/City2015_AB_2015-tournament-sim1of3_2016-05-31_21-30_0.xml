@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><simulationstate status="running">
+<state cell-size="0.001" max-lat="51.5223" max-lon="-0.0354" min-lat="51.4647" min-lon="-0.1978" number-of-steps="null" proximity="2.0E-4" simulation="City2015_AB_2015-tournament-sim1of3" step="0">
+<facilities>
+<facility lat="51.4872" lon="-0.1368" name="shop1" stock="5x tool1 @ 51&#10;30x base3 @ 241&#10;500x base1 @ 5&#10;50x base2 @ 17&#10;3x tool2 @ 139&#10;" type="SH"/>
+<facility lat="51.5053" lon="-0.109" name="shop2" stock="5x tool1 @ 510&#10;30x base3 @ 2410&#10;500x base1 @ 50&#10;50x base2 @ 170&#10;3x tool2 @ 1390&#10;" type="SH"/>
+<facility lat="51.5129" lon="-0.1345" name="shop3" stock="5x tool1 @ 52&#10;30x base3 @ 242&#10;500x base1 @ 6&#10;50x base2 @ 18&#10;10x tool3 @ 10&#10;3x tool2 @ 140&#10;" type="SH"/>
+<facility lat="51.5019" lon="-0.1129" name="workshop1" price="300" type="WS"/>
+<facility lat="51.5183" lon="-0.0822" name="workshop2" price="300" type="WS"/>
+<facility capacity="0/10000" lat="51.5178" lon="-0.1021" name="storage1" price="3" stored="" type="ST"/>
+<facility capacity="0/10000" lat="51.5045" lon="-0.1394" name="storage2" price="3" stored="" type="ST"/>
+<facility lat="51.5068" lon="-0.0993" name="dump1" price="300" type="DU"/>
+<facility lat="51.4923" lon="-0.1668" name="dump2" price="300" type="DU"/>
+<facility concurrent="2" fPrice="1" lat="51.508" lon="-0.1337" name="charging1" q="0" rate="80" type="CH"/>
+<facility concurrent="1" fPrice="2" lat="51.4892" lon="-0.1155" name="charging2" q="0" rate="80" type="CH"/>
+<facility concurrent="4" fPrice="2" lat="51.5146" lon="-0.1071" name="charging3" q="0" rate="50" type="CH"/>
+</facilities>
+<agents>
+<agent batteryCapacity="500" charge="500" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5125" load="0" loadCapacity="550" lon="-0.1608" name="a1" products="" role="Car" team="A"/>
+<agent batteryCapacity="250" charge="250" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5052" load="0" loadCapacity="100" lon="-0.1758" name="a2" products="" role="Drone" team="A"/>
+<agent batteryCapacity="350" charge="350" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5109" load="0" loadCapacity="300" lon="-0.0793" name="a3" products="" role="Motorcycle" team="A"/>
+<agent batteryCapacity="3000" charge="3000" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.4748" load="0" loadCapacity="1000" lon="-0.1612" name="a4" products="" role="Truck" team="A"/>
+<agent batteryCapacity="500" charge="500" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5125" load="0" loadCapacity="550" lon="-0.1608" name="b1" products="" role="Car" team="B"/>
+<agent batteryCapacity="250" charge="250" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5052" load="0" loadCapacity="100" lon="-0.1758" name="b2" products="" role="Drone" team="B"/>
+<agent batteryCapacity="350" charge="350" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.5109" load="0" loadCapacity="300" lon="-0.0793" name="b3" products="" role="Motorcycle" team="B"/>
+<agent batteryCapacity="3000" charge="3000" lastAction="skip" lastActionParam="" lastActionResult="successful" lat="51.4748" load="0" loadCapacity="1000" lon="-0.1612" name="b4" products="" role="Truck" team="B"/>
+</agents>
+<jobs>
+<job id="job_id3411344203246301526" itemsDel="" itemsReq="3x material1&#10; 3x material2&#10; " poster="system" reward="0" status="0"/>
+<job id="job_id379095930203083158" itemsDel="" itemsReq="2x material3&#10; " poster="system" reward="10000" status="0"/>
+<job id="job_id109039703540303960" itemsDel="" itemsReq="3x material1&#10; 3x material2&#10; " poster="system" reward="0" status="0"/>
+</jobs>
+<teams>
+<team jobs="" money="500000" name="A"/>
+<team jobs="" money="500000" name="B"/>
+</teams>
+</state>
+</simulationstate>

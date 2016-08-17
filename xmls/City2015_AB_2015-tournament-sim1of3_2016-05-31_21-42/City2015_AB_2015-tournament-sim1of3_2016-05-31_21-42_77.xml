@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><simulationstate status="running">
+<state cell-size="0.001" max-lat="51.5223" max-lon="-0.0354" min-lat="51.4647" min-lon="-0.1978" number-of-steps="null" proximity="2.0E-4" simulation="City2015_AB_2015-tournament-sim1of3" step="77">
+<facilities>
+<facility lat="51.4872" lon="-0.1368" name="shop1" stock="21x tool1 @ 51&#10;50x base3 @ 241&#10;494x base1 @ 5&#10;76x base2 @ 17&#10;3x tool2 @ 139&#10;" type="SH"/>
+<facility lat="51.5053" lon="-0.109" name="shop2" stock="21x tool1 @ 510&#10;50x base3 @ 2410&#10;539x base1 @ 50&#10;76x base2 @ 170&#10;3x tool2 @ 1390&#10;" type="SH"/>
+<facility lat="51.5129" lon="-0.1345" name="shop3" stock="21x tool1 @ 52&#10;50x base3 @ 242&#10;539x base1 @ 6&#10;76x base2 @ 18&#10;10x tool3 @ 10&#10;3x tool2 @ 140&#10;" type="SH"/>
+<facility lat="51.5019" lon="-0.1129" name="workshop1" price="300" type="WS"/>
+<facility lat="51.5183" lon="-0.0822" name="workshop2" price="300" type="WS"/>
+<facility capacity="0/10000" lat="51.5178" lon="-0.1021" name="storage1" price="3" stored="Team A:&#10;Team B:&#10;" type="ST"/>
+<facility capacity="0/10000" lat="51.5045" lon="-0.1394" name="storage2" price="3" stored="Team A:&#10;Team B:&#10;" type="ST"/>
+<facility lat="51.5068" lon="-0.0993" name="dump1" price="300" type="DU"/>
+<facility lat="51.4923" lon="-0.1668" name="dump2" price="300" type="DU"/>
+<facility concurrent="2" fPrice="1" lat="51.508" lon="-0.1337" name="charging1" q="0" rate="80" type="CH"/>
+<facility concurrent="1" fPrice="2" lat="51.4892" lon="-0.1155" name="charging2" q="0" rate="80" type="CH"/>
+<facility concurrent="4" fPrice="2" lat="51.5146" lon="-0.1071" name="charging3" q="0" rate="50" type="CH"/>
+</facilities>
+<agents>
+<agent batteryCapacity="500" charge="210" lastAction="noAction" lastActionParam="" lastActionResult="" lat="51.5019" load="300" loadCapacity="550" lon="-0.1129" name="a1" products="30x base1&#10; " role="Car" team="A"/>
+<agent batteryCapacity="250" charge="230" lastAction="continue" lastActionParam="" lastActionResult="successful" lat="51.50467607826123" load="0" loadCapacity="100" lon="-0.1658137341307351" name="a2" products="" role="Drone" team="A"/>
+<agent batteryCapacity="350" charge="30" lastAction="assist_assemble" lastActionParam="assembler=vehicle1 " lastActionResult="failed_unknown_agent" lat="51.5019" load="150" loadCapacity="300" lon="-0.1129" name="a3" products="15x base1&#10; " role="Motorcycle" team="A"/>
+<agent batteryCapacity="3000" charge="2470" lastAction="continue" lastActionParam="" lastActionResult="successful" lat="51.49848172636413" load="0" loadCapacity="1000" lon="-0.13219307325209173" name="a4" products="" role="Truck" team="A"/>
+<agent batteryCapacity="500" charge="500" lastAction="noAction" lastActionParam="" lastActionResult="" lat="51.5125" load="0" loadCapacity="550" lon="-0.1608" name="b1" products="" role="Car" team="B"/>
+<agent batteryCapacity="250" charge="250" lastAction="noAction" lastActionParam="" lastActionResult="" lat="51.5052" load="0" loadCapacity="100" lon="-0.1758" name="b2" products="" role="Drone" team="B"/>
+<agent batteryCapacity="350" charge="350" lastAction="noAction" lastActionParam="" lastActionResult="" lat="51.5109" load="0" loadCapacity="300" lon="-0.0793" name="b3" products="" role="Motorcycle" team="B"/>
+<agent batteryCapacity="3000" charge="3000" lastAction="noAction" lastActionParam="" lastActionResult="" lat="51.4748" load="0" loadCapacity="1000" lon="-0.1612" name="b4" products="" role="Truck" team="B"/>
+</agents>
+<jobs>
+<job id="job_id6469856417334274892" itemsDel="" itemsReq="3x material1&#10; 3x material2&#10; " poster="system" reward="4000" status="2"/>
+<job id="job_id8862698655635650760" itemsDel="" itemsReq="2x material3&#10; " poster="system" reward="10000" status="2"/>
+<job id="job_id2725255105881790292" itemsDel="" itemsReq="3x material1&#10; 3x material2&#10; " poster="system" reward="0" status="4"/>
+<job id="job_id2696467645572903164" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2391211772754716278" itemsDel="Team null:&#10;" itemsReq="10x base3&#10; 3x base1&#10; 9x base2&#10; " poster="A" reward="821" status="4"/>
+<job id="job_id1419304765404007129" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4315823985756253031" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7810797102985072955" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3017911331602748163" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7358528751384371445" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2350190923453003325" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5848500591104169708" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1509692290345652808" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2189961433579123110" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1080696398831059643" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2406073706769415211" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3130244486481010438" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5257247094114402974" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3899193400546625875" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7699158955526758201" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id6368031939148984525" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7876150056592360881" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1322173080334082939" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id8052028938501093961" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1938892804245970994" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7843097103671983584" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4909196106697805679" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id8001025057288799853" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1730201978600006099" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5581825110987347858" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id610780326902280737" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1620842151237787851" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3563719599794507446" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7349939431663015585" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4405852709849543642" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7772971272477643765" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4611913095841972416" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5998112146822504754" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id340983037467847996" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7486144365806207299" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1547636856993343268" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2812103290560477312" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id8152556720177418342" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4017502911641782353" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3658785146104713897" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1475409243310978998" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3846921511250495132" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4056541542786685426" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1852148917365693390" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5080513393816373171" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id3346511851330160205" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2348587573382896357" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1298391472209495240" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5578804247879798357" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5531755392428298371" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id868423612626918440" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7792674001665267383" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id614458035127365157" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id9133803747933572353" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id1365714355415627490" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4464659646322717222" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7979076981375921538" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7742268990566864806" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id2590159871559852266" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id6877032144285330323" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id4817853502565011089" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id7574645191872816179" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+<job id="job_id5508730402628563955" itemsDel="Team null:&#10;" itemsReq="30x material3&#10; 10x material1&#10; 20x material2&#10; " poster="A" reward="0" status="1"/>
+</jobs>
+<teams>
+<team jobs="job_id6469856417334274892 " money="499775" name="A"/>
+<team jobs="" money="500000" name="B"/>
+</teams>
+</state>
+</simulationstate>
